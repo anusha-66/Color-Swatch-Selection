@@ -65,8 +65,8 @@
          generateUI();
      })('demo1');
      $(".colordva").click(function (event) {
-         $("#detailCard").css('background', event.srcElement.parentElement.innerText);
-         $("#colorName")[0].innerText = event.srcElement.parentElement.innerText;
+         $("#detailCard").css('background', event.target.parentElement.innerText);
+         $("#colorName")[0].innerText = event.target.parentElement.innerText;
          $("#detail").show();
          $("#main").hide();
      });
